@@ -1,25 +1,21 @@
 {
-  "name": "blog-post-system",
+  "name": "blog_post_system",
   "version": "1.0.0",
-  "description": "A blog post system with Koa.js backend and React frontend",
+  "description": "A full-stack blog application built with Koa.js and React.",
+  "main": "index.js",
   "scripts": {
-    "install-all": "npm install && cd frontend && npm install",
-    "start:backend": "node backend/server.js",
-    "start:frontend": "cd frontend && npm start",
-    "dev:backend": "nodemon backend/server.js",
-    "dev": "concurrently --kill-others-on-fail \"npm run dev:backend\" \"npm run start:frontend\"",
-    "start": "npm run dev"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"cd backend && node index.js\" \"cd frontend && npm start\""
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "bcryptjs": "^2.4.3",
+    "concurrently": "^9.1.2",
+    "cross-env": "^7.0.3",
     "jsonwebtoken": "^9.0.2",
-    "koa": "^2.15.0",
+    "koa": "^2.16.0",
     "koa-bodyparser": "^4.4.1",
-    "koa-cors": "^0.0.16",
-    "koa-router": "^12.0.1"
-  },
-  "devDependencies": {
-    "concurrently": "^8.2.2",
-    "nodemon": "^3.0.3"
+    "koa-router": "^13.0.1"
   }
 }
