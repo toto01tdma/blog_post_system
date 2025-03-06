@@ -4,6 +4,7 @@ import SignUp from "./pages/SignUp";
 import Login from "./pages/Login";
 import BlogPosts from "./pages/BlogPosts";
 import { useContext } from "react";
+import Navbar from './components/Navbar';
 
 const PrivateRoute = ({ children }) => {
     const { token } = useContext(AuthContext);
